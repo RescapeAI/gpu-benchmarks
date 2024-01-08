@@ -24,7 +24,7 @@ def load_pipe_sd21():
 
 if __name__ == '__main__':
     parser = argparse.ArgumentParser()
-    parser.add_argument('--model', choices=['sdxl', 'sd21'])
+    parser.add_argument('--model', choices=['sdxl', 'sd21'], required=True)
     args = parser.parse_args()
 
     if args.model == 'sdxl':
